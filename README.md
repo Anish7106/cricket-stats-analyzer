@@ -1,69 +1,49 @@
 # Cricket Statistics Analyzer
 
-A Python-based Cricket Statistics Analyzer using SQLite, Pandas and Matplotlib.
+Explore and compare IPL batting and bowling statistics with a menu-driven Python app backed by SQLite, Pandas, and Matplotlib.
 
-## Features
+## At a glance
 
-- SQL database for cricket statistics
-- Pandas DataFrames
-- Menu-driven interface
-- Batting statistics comparison
-- Bowling statistics comparison
-- Matplotlib data visualization
+| Batting analysis | Bowling analysis |
+| --- | --- |
+| Runs, average, strike rate, and highest score | Runs conceded, wickets, economy, and bowling average |
+| Fours, sixes, fifties, and hundreds | Bowling strike rate and four-wicket hauls |
+| Matplotlib player comparison charts | Matplotlib player comparison charts |
 
-## Technologies
+## Sample data preview
 
-- Python
-- SQLite
-- Pandas
-- Matplotlib
+The included SQL seed file contains IPL 2023 batting and bowling records. Here are two example entries:
 
-## Project Structure
+| Player | Category | Runs | Average | Strike rate |
+| --- | --- | ---: | ---: | ---: |
+| Shubman Gill | Batting | 890 | 59.33 | 157.80 |
+
+| Player | Category | Wickets | Economy | Bowling average |
+| --- | --- | ---: | ---: | ---: |
+| Mohammed Shami | Bowling | 28 | 8.03 | 18.64 |
+
+## Run locally
+
+Requires Python 3.
+
+```bash
+git clone https://github.com/Anish7106/cricket-stats-analyzer.git
+cd cricket-stats-analyzer
+pip install -r requirements.txt
+python cricket_stats.py
+```
+
+Choose batting or bowling statistics from the menu, then select a metric to display a player comparison chart.
+
+## Project layout
 
 ```text
 cricket-stats-analyzer/
 ├── data/
 │   └── cricket_stats.sql
 ├── cricket_stats.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run
-
-```bash
-python cricket_stats.py
-```
-
-The program automatically creates the SQLite database from `data/cricket_stats.sql`.
-
-## Statistics
-
-### Batting
-- Runs
-- Batting Average
-- Strike Rate
-- Highest Score
-- Fours
-- Sixes
-- Fifties
-- Hundreds
-
-### Bowling
-- Runs Conceded
-- Wickets
-- Economy Rate
-- Bowling Average
-- Bowling Strike Rate
-- Four-Wicket Hauls
-
-## Author
-
-Anish Bandaru
+**Stack:** Python · SQLite · Pandas · Matplotlib  
+**Author:** Anish Bandaru
